@@ -31,7 +31,7 @@ watch:
 .PHONY: dev
 .PHONY: watch
 
-push:
+pull:
 	git pull origin master
 
 push:

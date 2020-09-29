@@ -1,0 +1,19 @@
+{
+  "name": "json-orchestrator",
+  "version": "1.0.0",
+  "description": "Using NodeJS to orchestrate an array of JSON files as a database.",
+  "main": "testing/testServer.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwans/json-orchestrator.git"
+  },
+  "author": "Ryan Wans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanwans/json-orchestrator/issues"
+  },
+  "homepage": "https://github.com/ryanwans/json-orchestrator#readme"
+}

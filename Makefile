@@ -2,7 +2,7 @@
 
 MAKEFLAGS += --silent
 include .env
-export $(shell sed 's/=.*//' .env)
+# export $(shell sed 's/=.*//' .env)
 
 PATH  := node_modules/.bin:$(PATH)
 SHELL := /bin/bash

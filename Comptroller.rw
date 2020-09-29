@@ -2,7 +2,7 @@
   return 1
 endif/
 
-[assign]
+[assign _o]
   version         ::@ 1.0.5
   package         ::@ "npm"
   rules           ::@ <RuleSet1>  
@@ -15,3 +15,5 @@ endif/
   useSPA? false,
   dType? null
 </>
+
+export _o as 1!

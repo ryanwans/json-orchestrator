@@ -1,0 +1,17 @@
+/if args{version} == 0
+  return 1
+endif/
+
+[assign]
+  version         ::@ 1.0.5
+  package         ::@ "npm"
+  rules           ::@ <RuleSet1>  
+[endassign]
+
+<RuleSet1> as
+  autoUpdate? false,
+  useNode? true,
+  useTelemetry? false,
+  useSPA? false,
+  dType? null
+</>

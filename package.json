@@ -4,7 +4,8 @@
   "description": "Using NodeJS to orchestrate an array of JSON files as a database.",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auto": "nohup python ./auto/re.py > pid.log 2>&1 &echo $! > save_pid.txt"
   },
   "repository": {
     "type": "git",

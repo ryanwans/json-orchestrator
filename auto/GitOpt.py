@@ -10,7 +10,7 @@ class Git:
     def pull(self):
         cmd = ["git", "pull", "origin", self.branch]
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-        time.sleep(2)
+        time.sleep(3)
         output = process.communicate()[0]
         return output
     def push(self):
@@ -18,8 +18,11 @@ class Git:
         commit = ["git", "commit", "-m", "rYANaUTOpUSH"]
         push = ["git", "push", "origin", self.branch]
         subprocess.Popen(add, stdout=subprocess.PIPE)
+        time.sleep(1)
         subprocess.Popen(commit, stdout=subprocess.PIPE)
+        time.sleep(1)
         process = subprocess.Popen(push, stdout=subprocess.PIPE)
+        time.sleep(1)
         return process.communicate()[0]
     
 def echo(mes):

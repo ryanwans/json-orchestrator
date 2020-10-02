@@ -8,7 +8,6 @@ continueThread = True
 def MainLoop(delay):
     while continueThread:
         GitOpt.pull()
-        time.sleep(5)
         GitOpt.push()
         GitOpt.say("Currated pull request to git repo!")
         time.sleep(delay)

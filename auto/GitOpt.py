@@ -15,7 +15,7 @@ class Git:
         return output
     def push(self):
         add = ["git", "add", "-A"]
-        commit = ["git", "commit", "-m", "rYANaUTOpUSH"]
+        commit = ["git", "commit", "-m", "RyanAutoPush"]
         push = ["git", "push", "origin", self.branch]
         subprocess.Popen(add, stdout=subprocess.PIPE)
         time.sleep(1)

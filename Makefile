@@ -15,9 +15,9 @@ app_bundle      := build/app.js
 spec_coffee     := $(wildcard spec/*.coffee)
 spec_js         := $(spec_coffee:%.coffee=build/%.js)
 
-UserDB1 = './testing/userDB1.json'
-UserDB2 = './testing/userDB2.json'
-UserDB3 = './testing/userDB3.json'
+UserDB1 = './testing/bank/userDB1.json'
+UserDB2 = './testing/bank/userDB2.json'
+UserDB3 = './testing/bank/userDB3.json'
 
 dev:
 	node_modules/.bin/nodemon testing/testServer.js
@@ -53,9 +53,9 @@ expose_logs:
 	git logs
 
 databaseState:
-	cat UserDB1
-	cat UserDB2
-	cat UserDB3
+	cat $(UserDB1)
+	cat $(UserDB2)
+	cat $(UserDB3)
 
 define npm_script_targets
 TARGETS := $(shell node -e 'for (var k in require("./package.json").scripts) {console.log(k.replace(/:/g, "-"));}')
